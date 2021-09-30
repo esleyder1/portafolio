@@ -2,7 +2,7 @@
   <main class="scroller projects__view">
     <div class="image">
       <img src="../assets/Group 11-0.svg" alt="" />
-      <h1>MY PROJECTS</h1>
+      <h1>MIS PROYECTOS</h1>
     </div>
     <Project />
   </main>

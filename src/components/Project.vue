@@ -26,12 +26,12 @@
         <footer class="buttons">
           <a :href="repo.svn_url">
             <i class="fab fa-github"></i>
-            CODE
+            Código
           </a>
-          <a :href="repo.homepage">
+<!--           <a :href="repo.homepage">
             <i class="fas fa-play-circle"></i>
-            DEMO
-          </a>
+            Demo
+          </a> -->
         </footer>
       </div>
     </section>
@@ -61,7 +61,7 @@ export default {
   // requesting the repos from the GitHub API at creation
   // with the JavaScript fetch API
   beforeCreate() {
-    fetch('https://api.github.com/users/ahmedaltaai/repos?type=public')
+    fetch('https://api.github.com/users/esleyder1/repos?type=public')
       .then(res => res.json())
       .then(data => {
         this.repos = data

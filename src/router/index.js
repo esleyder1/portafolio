@@ -35,4 +35,10 @@ const router = new VueRouter({
   routes
 })
 
+Vue.prototype.$vuescrollConfig = {
+  bar: {
+    background: '#109080'
+  }
+};
+
 export default router

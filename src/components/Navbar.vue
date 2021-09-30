@@ -55,6 +55,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+header {
+      background-image: url(../assets/waves/wave.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    width: 100%;
+    height: 9em;
+    position: fixed;
+    top: 0;
+
+}
 .navbar {
   position: fixed;
   top: 1em;
@@ -67,6 +78,7 @@ export default {
   height: 3.8em;
   //background-color: #2a2b2f;
   padding: 0 1em;
+
 
   .fa-bars {
     font-size: 2em;
@@ -112,9 +124,9 @@ export default {
         }
 
         &:hover {
-          background-color: #282d69;
           height: 100%;
           width: 100%;
+          color: #ffd691;
         }
 
         i {

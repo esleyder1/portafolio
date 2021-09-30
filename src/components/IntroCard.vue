@@ -129,6 +129,7 @@ export default {
     padding: 6em;
 
     .intro {
+      margin-top: 10%;
       height: 70%;
       width: 100%;
       display: flex;
@@ -149,11 +150,16 @@ export default {
       margin-top: 0;
       margin-right: 0.5em;
       height: 100%;
+
+      a{
+        margin: 3px;
+      }
     }
+
 
     .link-to-projects {
       width: 100%;
-      margin-top: 2em;
+      margin-top: 1em;
     }
   }
 }

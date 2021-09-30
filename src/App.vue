@@ -1,12 +1,16 @@
 <template>
+
   <div id="app" class="scroller">
-    <navbar />
-    <router-view />
+
+      <navbar />
+      <router-view />
   </div>
+    
 </template>
 
 <script>
 import navbar from '@/components/Navbar'
+
 
 export default {
   components: {
@@ -34,15 +38,11 @@ export default {
 body {
   background-color: #1f275b;
   height: 100%;
-  background-image: url(assets/waves/wave_top.svg);
-  //background-image: url(assets/webb.png);
-  background-repeat: no-repeat;
-  background-position: top, bottom;
-  background-size: contain;
+
 }
 
 main {
-  margin-top: 3.55em;
+  margin-top: 7em;
 }
 
 a:focus {
@@ -52,30 +52,32 @@ a:focus {
 a:active {
   outline: none;
 }
-
+/* width */
 ::-webkit-scrollbar {
-  display: none;
-  scrollbar-width: none;
+  width: 10px;
 }
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1a235a; 
+}
+ 
+/* Handle */
 ::-webkit-scrollbar-thumb {
-  display: none;
+  background: #161d48; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #161d48; 
 }
 
 .home__view {
-  height: 93vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-@media (min-width: 43em) {
-  .home__view {
-    height: 93vh;
-  }
-  .projects__view {
-    height: 93vh;
-  }
-}
 </style>
